@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Student Data</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Level</th>
+            <th>CGPA</th>
+            <th>ID</th>
+            <th>Department</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student[1] }}</td>
+            <td>{{ student[2] }}</td>
+            <td>{{ student[3] }}</td>
+            <td>{{ student[4] }}</td>
+            <td>{{ student[5] }}</td>
+            <td>{{ student[6] }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

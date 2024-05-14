@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 10%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #2b1717;
+    padding: 8px;
+}
+
+th {
+    background-color: #ADC7DB;
+}
+
+tr:nth-child(even) {
+    background-color: #7daacd;
+}
+tr:nth-child(odd) {
+    background-color: #ADC7DB;
+}
+
+
